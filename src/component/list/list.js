@@ -26,7 +26,7 @@ const List = () => {
 
 	const fetchData = async () => {
 		setTimeout(async () => {
-			const result = await fetch(`https://picsum.photos/v2/list?page=${page}&result=10`);
+			const result = await fetch(`https://picsum.photos/v2/list?page=${page}`);
 			const data = await result.json();
 			setPage(page + 1);
 			setListItems(() => {
